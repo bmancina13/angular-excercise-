@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>My Favorite Band</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<body ng-app>
+  
+  <div class="band">
+  	<h1>Maroon 5</h1>
+
+<div class="maroon 5">
+  <img src="http://theimpactnews.com/wp-content/uploads/2012/09/cache_3218141504.jpg" alt= "maroon 5" style="width: 250px; height:300">
+</div>
+  <div ng-init="Maroon = [
+   {name: 'Adam Levine', instrument: 'Guitar' }, 
+   {name: 'James Valentine', instrument: 'Guitar' }, 
+   {name: 'Jesse Carmichael', instrument: 'Keyboard'},
+   {name: 'Pj Morton', instrument: 'Keyboard'},
+   {name: 'Matt Flynn', instrument: 'Percussion'},
+   {name: 'Mickey Madden', instrument:'Bass Guitar'}
+  ]">
+    
+    <ul>
+      <li ng-repeat="Maroon in Maroon"><span class='member'>{{Maroon.name}}</span> plays the <span class='instrument'>{{Maroon.instrument}}</span></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
+
+</body>
+</html>
